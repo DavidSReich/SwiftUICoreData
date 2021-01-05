@@ -3,7 +3,7 @@
 `SwiftUICoreData` is an example application using `CoreData` for persistent data storage.
 
 ## Screenshots
-![Purchase Orders](Screenshots/Purchase Orders.png)
+![Purchase Orders](/Screenshots/Purchase Orders.png)
 ![Purchase Order](Screenshots/Purchase Order.png)
 ![New Purchase Order](Screenshots/New Purchase Order.png)
 ![New Item](Screenshots/New Item.png)
