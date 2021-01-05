@@ -12,8 +12,9 @@ struct SwiftUICoreDataApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
+        let viewModel = PurchaseOrdersViewModel(viewContext: persistenceController.container.viewContext, dataSource: DataSource(networkService: NetworkService()))
         WindowGroup {
-            ContentView()
+            PurchaseOrdersView(purchaseOrdersViewModel: viewModel)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
