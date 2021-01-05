@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Invoice" representedClassName="Invoice" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="invoice_number" optional="YES" attributeType="String"/>
+        <attribute name="last_updated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="received_status" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="purchaseOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="invoices" inverseEntity="PurchaseOrder"/>
+        <relationship name="receipts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Receipt" inverseName="invoice" inverseEntity="Receipt"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="invoice_number"/>
+                <constraint value="purchaseOrder"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="last_updated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="purchaseOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="items" inverseEntity="PurchaseOrder"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="product_item_id"/>
+                <constraint value="purchaseOrder"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="PurchaseOrder" representedClassName="PurchaseOrder" syncable="YES">
+        <attribute name="delivery_note" optional="YES" attributeType="String"/>
+        <attribute name="issue_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="last_updated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="preferred_delivery_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="purchase_order_number" optional="YES" attributeType="String"/>
+        <relationship name="invoices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Invoice" inverseName="purchaseOrder" inverseEntity="Invoice"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Item" inverseName="purchaseOrder" inverseEntity="Item"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="purchase_order_number"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Receipt" representedClassName="Receipt" syncable="YES">
+        <attribute name="last_updated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="received_quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="invoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="receipts" inverseEntity="Invoice"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="product_item_id"/>
+                <constraint value="invoice"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Invoice" positionX="210.38671875" positionY="-16.78515625" width="128" height="133"/>
+        <element name="Item" positionX="216.3046875" positionY="215.7421875" width="128" height="103"/>
+        <element name="PurchaseOrder" positionX="-63" positionY="36" width="128" height="148"/>
+        <element name="Receipt" positionX="468.64453125" positionY="12.09765625" width="128" height="103"/>
+    </elements>
+</model>
