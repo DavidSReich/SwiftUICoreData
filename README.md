@@ -2,7 +2,13 @@
 
 `SwiftUICoreData` is an example application using `CoreData` for persistent data storage.
 
-Assumptions ...
+## Screenshots
+![Purchase Orders](http://github.com/DavidSReich/SwiftUICoreData/blob/main/Screenshots/PurchaseOrders.png)
+![Purchase Order](http://github.com/DavidSReich/SwiftUICoreData/blob/main/Screenshots/PurchaseOrder.png)
+![New Purchase Order](http://github.com/DavidSReich/SwiftUICoreData/blob/main/Screenshots/NewPurchaseOrder.png)
+![New Item](http://github.com/DavidSReich/SwiftUICoreData/blob/main/Screenshots/NewItem.png)
+
+## Assumptions
 
 Because there are no rules or guarantees about internal consistency in each purchase order it isn't possible to verify that items in receipts are in the purchase order.
 The downloaded sample data does NOT meet this requirement, so any attempt to validate the purchase order would reject it for that reason.  Therefore no such validation is attempted.
@@ -51,6 +57,3 @@ When updating an existing PurchaseOrder with a downloaded one all Items, Invoice
 Any Items removed by the user (not currently implemented) will be restored if they are in the new PurchaseOrder.
 If not updating the entire PurchaseOrder ... then update Items, Invoices, etc. with more recent ones, preserving any Items that have been added by the user.
 Similarly for Invoices and Receipts added/modified/deleted by the user (not currently implemented).
-
-
-
