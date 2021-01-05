@@ -11,6 +11,10 @@
 		637EA082259D93A1009C0255 /* ReceiptModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EA081259D93A1009C0255 /* ReceiptModelTests.swift */; };
 		637EA087259D9706009C0255 /* InvoiceModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EA086259D9706009C0255 /* InvoiceModelTests.swift */; };
 		639B4DF125A4044E00CC46A6 /* DateFormatter+iso8601MSec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B4DF025A4044E00CC46A6 /* DateFormatter+iso8601MSec.swift */; };
+		639B4E0425A42DB800CC46A6 /* New Item.png in Resources */ = {isa = PBXBuildFile; fileRef = 639B4E0025A42DB800CC46A6 /* New Item.png */; };
+		639B4E0525A42DB800CC46A6 /* Purchase Orders.png in Resources */ = {isa = PBXBuildFile; fileRef = 639B4E0125A42DB800CC46A6 /* Purchase Orders.png */; };
+		639B4E0625A42DB800CC46A6 /* Purchase Order.png in Resources */ = {isa = PBXBuildFile; fileRef = 639B4E0225A42DB800CC46A6 /* Purchase Order.png */; };
+		639B4E0725A42DB800CC46A6 /* New Purchase Order.png in Resources */ = {isa = PBXBuildFile; fileRef = 639B4E0325A42DB800CC46A6 /* New Purchase Order.png */; };
 		63A5ED61259C3939007DCB49 /* BaseTestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5ED60259C3939007DCB49 /* BaseTestUtilities.swift */; };
 		63AD404E2561FDB600BDB093 /* Receipt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AD40462561FDB600BDB093 /* Receipt+CoreDataClass.swift */; };
 		63AD404F2561FDB600BDB093 /* Receipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AD40472561FDB600BDB093 /* Receipt+CoreDataProperties.swift */; };
@@ -62,10 +66,10 @@
 		637EA081259D93A1009C0255 /* ReceiptModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModelTests.swift; sourceTree = "<group>"; };
 		637EA086259D9706009C0255 /* InvoiceModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceModelTests.swift; sourceTree = "<group>"; };
 		639B4DF025A4044E00CC46A6 /* DateFormatter+iso8601MSec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601MSec.swift"; sourceTree = "<group>"; };
-		639B4DF625A4239200CC46A6 /* NewItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewItem.png; sourceTree = "<group>"; };
-		639B4DF725A4239200CC46A6 /* NewPurchaseOrder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewPurchaseOrder.png; sourceTree = "<group>"; };
-		639B4DF825A4239200CC46A6 /* PurchaseOrder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurchaseOrder.png; sourceTree = "<group>"; };
-		639B4DF925A4239200CC46A6 /* PurchaseOrders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurchaseOrders.png; sourceTree = "<group>"; };
+		639B4E0025A42DB800CC46A6 /* New Item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Item.png"; sourceTree = "<group>"; };
+		639B4E0125A42DB800CC46A6 /* Purchase Orders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purchase Orders.png"; sourceTree = "<group>"; };
+		639B4E0225A42DB800CC46A6 /* Purchase Order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purchase Order.png"; sourceTree = "<group>"; };
+		639B4E0325A42DB800CC46A6 /* New Purchase Order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Purchase Order.png"; sourceTree = "<group>"; };
 		639C9AEC25A3074700D42B4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		63A5ED60259C3939007DCB49 /* BaseTestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestUtilities.swift; sourceTree = "<group>"; };
 		63AD40462561FDB600BDB093 /* Receipt+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Receipt+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -149,10 +153,10 @@
 		639B4DFB25A423D700CC46A6 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				639B4DF625A4239200CC46A6 /* NewItem.png */,
-				639B4DF725A4239200CC46A6 /* NewPurchaseOrder.png */,
-				639B4DF825A4239200CC46A6 /* PurchaseOrder.png */,
-				639B4DF925A4239200CC46A6 /* PurchaseOrders.png */,
+				639B4E0025A42DB800CC46A6 /* New Item.png */,
+				639B4E0325A42DB800CC46A6 /* New Purchase Order.png */,
+				639B4E0225A42DB800CC46A6 /* Purchase Order.png */,
+				639B4E0125A42DB800CC46A6 /* Purchase Orders.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -363,6 +367,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639B4E0725A42DB800CC46A6 /* New Purchase Order.png in Resources */,
+				639B4E0625A42DB800CC46A6 /* Purchase Order.png in Resources */,
+				639B4E0525A42DB800CC46A6 /* Purchase Orders.png in Resources */,
+				639B4E0425A42DB800CC46A6 /* New Item.png in Resources */,
 				63B23C94256100A500C72D58 /* Preview Assets.xcassets in Resources */,
 				63B23C91256100A500C72D58 /* Assets.xcassets in Resources */,
 			);
