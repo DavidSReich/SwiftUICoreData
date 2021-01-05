@@ -62,6 +62,10 @@
 		637EA081259D93A1009C0255 /* ReceiptModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModelTests.swift; sourceTree = "<group>"; };
 		637EA086259D9706009C0255 /* InvoiceModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceModelTests.swift; sourceTree = "<group>"; };
 		639B4DF025A4044E00CC46A6 /* DateFormatter+iso8601MSec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601MSec.swift"; sourceTree = "<group>"; };
+		639B4DF625A4239200CC46A6 /* New Item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Item.png"; sourceTree = "<group>"; };
+		639B4DF725A4239200CC46A6 /* New Purchase Order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Purchase Order.png"; sourceTree = "<group>"; };
+		639B4DF825A4239200CC46A6 /* Purchase Order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purchase Order.png"; sourceTree = "<group>"; };
+		639B4DF925A4239200CC46A6 /* Purchase Orders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purchase Orders.png"; sourceTree = "<group>"; };
 		639C9AEC25A3074700D42B4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		63A5ED60259C3939007DCB49 /* BaseTestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestUtilities.swift; sourceTree = "<group>"; };
 		63AD40462561FDB600BDB093 /* Receipt+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Receipt+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -142,6 +146,17 @@
 			path = "CoreData Support";
 			sourceTree = "<group>";
 		};
+		639B4DFB25A423D700CC46A6 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				639B4DF625A4239200CC46A6 /* New Item.png */,
+				639B4DF725A4239200CC46A6 /* New Purchase Order.png */,
+				639B4DF825A4239200CC46A6 /* Purchase Order.png */,
+				639B4DF925A4239200CC46A6 /* Purchase Orders.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		639C9ADA25A2DCC300D42B4A /* CoreData Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				639C9AEC25A3074700D42B4A /* README.md */,
+				639B4DFB25A423D700CC46A6 /* Screenshots */,
 				63B23C8B256100A500C72D58 /* SwiftUICoreData */,
 				63B23CA2256100A600C72D58 /* SwiftUICoreDataTests */,
 				63B23C8A256100A500C72D58 /* Products */,
